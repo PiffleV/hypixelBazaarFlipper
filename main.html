@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div>
+            <h1>Craftless Flips</h1>
+            <div id="craftless-options">
+                <div>
+                    <label for="factions">Factions?</label> <input type="checkbox" name="factions">
+                </div>
+                <div>
+                    <label for="enchants">Enchantments?</label> <input type="checkbox" name="enchants">
+                </div>
+                <div>
+                    <label for="sortMethod">Sort Type:</label>
+                    <select name="sortMethod" id="sortMethod">
+                        <option value="raw">Raw Profit</option>
+                        <option value="percent">Percent Profit</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="minMoving">Minimum Items Sold & Bought in the past week: </label> <input type="number" name="minMoving">
+                </div>
+            </div>
+        </div>
+        <div id="craftless"></div>
+    </body>
+    <head>
+        <script src="main.js"></script>
+        <link rel="stylesheet" href="main.css">
+    </head>
+</html>
