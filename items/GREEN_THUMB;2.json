@@ -1,0 +1,40 @@
+{
+  "itemid": "minecraft:enchanted_book",
+  "displayname": "§fEnchanted Book",
+  "nbttag": "{ExtraAttributes:{enchantments:{green_thumb:2},id:\"GREEN_THUMB;2\"},HideFlags:254,ItemModel:\"minecraft:enchanted_book\",display:{Lore:[0:\"§8Combinable in Anvil\",1:\"\",2:\"§9Green Thumb II\",3:\"§7Grants §60.1 Farming Fortune\",4:\"§7per unique visitor served.\",5:\"§8(Excludes §lSPECIAL §8Visitors)\",6:\"\",7:\"§7Can be applied to Equipment.\",8:\"\",9:\"§6Sources:\",10:\" §7- SkyMart (§aI§7)\",11:\" §7- Bazaar (§aI-V§7)\",12:\"\",13:\"§6Applied To:\",14:\" §7- §fGloves\",15:\" §7- §fBelt\",16:\" §7- §fNecklace\",17:\" §7- §fBracelet\",18:\" §7- §fCloak\",19:\"\",20:\"§6Requirements:\",21:\" §7- §bEnchanting Level 24\",22:\"\",23:\"§f§lCOMMON\"],Name:\"§fEnchanted Book\"},ench:[]}",
+  "damage": 0,
+  "lore": [
+    "§8Combinable in Anvil",
+    "",
+    "§9Green Thumb II",
+    "§7Grants §60.1 Farming Fortune",
+    "§7per unique visitor served.",
+    "§8(Excludes §lSPECIAL §8Visitors)",
+    "",
+    "§7Can be applied to Equipment.",
+    "",
+    "§6Sources:",
+    " §7- SkyMart (§aI§7)",
+    " §7- Bazaar (§aI-V§7)",
+    "",
+    "§6Applied To:",
+    " §7- §fGloves",
+    " §7- §fBelt",
+    " §7- §fNecklace",
+    " §7- §fBracelet",
+    " §7- §fCloak",
+    "",
+    "§6Requirements:",
+    " §7- §bEnchanting Level 24",
+    "",
+    "§f§lCOMMON"
+  ],
+  "internalname": "GREEN_THUMB;2",
+  "clickcommand": "",
+  "crafttext": "",
+  "modver": "Firmament 3.4.0-dev+mc1.21.5+g4cd6602",
+  "infoType": "WIKI_URL",
+  "info": [
+    "https://hypixelskyblock.minecraft.wiki/w/Green_Thumb"
+  ]
+}

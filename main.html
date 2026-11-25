@@ -2,30 +2,61 @@
 <html>
     <body>
         <div>
-            <h1>Craftless Flips</h1>
-            <div id="craftless-options">
-                <div>
-                    <label for="factions">Factions?</label> <input type="checkbox" name="factions">
-                </div>
-                <div>
-                    <label for="enchants">Enchantments?</label> <input type="checkbox" name="enchants">
-                </div>
-                <div>
-                    <label for="sortMethod">Sort Type:</label>
-                    <select name="sortMethod" id="sortMethod">
-                        <option value="raw">Raw Profit</option>
-                        <option value="percent">Percent Profit</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="minMoving">Minimum Items Sold & Bought in the past week: </label> <input type="number" name="minMoving">
+            <div>
+                <h1>Craftless Flips</h1>
+                <div id="craftless-options" class="options">
+                    <div>
+                        <label for="factions">Factions?</label> <input type="checkbox" name="factions" autocomplete="off">
+                    </div>
+                    <div>
+                        <label for="enchants">Enchantments?</label> <input type="checkbox" name="enchants" autocomplete="off">
+                    </div>
+                    <div>
+                        <label for="sortMethod">Sort Type:</label>
+                        <select name="sortMethod" id="sortMethod" autocomplete="off">
+                            <option value=""></option>
+                            <option value="raw">Raw Profit</option>
+                            <option value="percent">Percent Profit</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="minMoving">Minimum Items Sold + Bought in the past week: </label> <input type="number" name="minMoving">
+                    </div>
                 </div>
             </div>
+            <div id="craftless" class="display"></div>
         </div>
-        <div id="craftless"></div>
+        <div>
+            <div>
+                Crafts last updated: Nov 25, 2026</br>
+                <a href="https://github.com/NotEnoughUpdates/NotEnoughUpdates-REPO/tree/master/items">https://github.com/NotEnoughUpdates/NotEnoughUpdates-REPO/tree/master/items</a>
+                <h1> Crafting Flips</h1>
+                <div id="crafting-options" class="options">
+                    <div>
+                        <label for="factions">Factions?</label> <input type="checkbox" name="factions" autocomplete="off">
+                    </div>
+                    <div>
+                        <label for="enchants">Enchantments?</label> <input type="checkbox" name="enchants" autocomplete="off">
+                    </div>
+                    <div>
+                        <label for="sortMethod">Sort Type:</label>
+                        <select name="sortMethod" id="sortMethod" autocomplete="off">
+                            <option value=""></option>
+                            <option value="raw">Raw Profit</option>
+                            <option value="percent">Percent Profit</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="minMoving">Minimum Items Sold (averaged over all items) + Bought in the past week: </label> <input type="number" name="minMoving">
+                    </div>
+                </div>
+            </div>
+            <div id="crafting" class="display"></div>
+        </div>
     </body>
     <head>
-        <script src="main.js"></script>
-        <link rel="stylesheet" href="main.css">
+        <script src="main.js" type="text/javascript"></script>
+        <script src="stupid.js" type="text/javascript"></script>
+        <link rel="stylesheet" type="text/css" href="main.css">
     </head>
 </html>

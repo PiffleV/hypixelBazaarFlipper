@@ -2,17 +2,24 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
-#craftless {
-    background-clip: #0f0;
+html, body {
+    height: 100%;
+}
+.display {
+    background-color: #eee;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     overflow: scroll;
     min-height: 0;
+    max-height: 100vh;
+    margin-left: 1em;
+    margin-right: 1em;
+    border-radius: 1em;
 }
 
-#craftless-options {
+.options {
     display: flex;
     flex-direction: column;
     justify-content: left;
@@ -29,6 +36,7 @@
     justify-content: center; 
     align-items: center;
     flex-direction: column;
+    border-radius: 1em;
 }
 
 .info-header {

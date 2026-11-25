@@ -1,0 +1,107 @@
+{
+  "itemid": "minecraft:skull",
+  "displayname": "§2Minos Champion §7(§dEvent Monster§7)",
+  "nbttag": "{ExtraAttributes:{id:\"MINOS_CHAMPION_MONSTER\"},HideFlags:254,ItemModel:\"minecraft:player_head\",SkullOwner:{Id:\"86e6b4be-1455-37b7-86e6-b4be1455f7b7\",Properties:{textures:[0:{Name:\"textures\",Value:\"e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmY3ZTc4NjUwODQyZTk1ZmFiMzk1MTRkYWQzYzYxM2Y3NzE2ZjYyYjYyNzkzYWExMzE3ZTgwYTIzMjg2YjgzYyJ9fX0\"}]},hypixelPopulated:1B},display:{Lore:[0:\"§7Mob Types: §2 Mythological§7, §e Humanoid\",1:\"\",2:\"§7The champion of King Minos.\",3:\"\",4:\"§7Dug up from §eGriffin Burrows §7in the §aHub§7.\"],Name:\"§2Minos Champion §7(§dEvent Monster§7)\"}}",
+  "damage": 3,
+  "lore": [
+    "§7Mob Types: §2 Mythological§7, §e Humanoid",
+    "",
+    "§7The champion of King Minos.",
+    "",
+    "§7Dug up from §eGriffin Burrows §7in the §aHub§7."
+  ],
+  "internalname": "MINOS_CHAMPION_MONSTER",
+  "clickcommand": "viewrecipe",
+  "crafttext": "",
+  "modver": "Firmament 44.2.0-dev+mc26.2+g955aae4",
+  "infoType": "WIKI_URL",
+  "info": [
+    "https://hypixelskyblock.minecraft.wiki/w/Minos_Champion"
+  ],
+  "recipes": [
+    {
+      "level": 175,
+      "coins": 58,
+      "combat_xp": 262,
+      "xp": 192,
+      "name": "§2Venerable Minos Champion",
+      "render": "@neurepo:mobs/minos_champion.json",
+      "panorama": "hub",
+      "type": "drops",
+      "drops": [
+        {
+          "id": "ANCIENT_CLAW:10",
+          "chance": "100%"
+        },
+        {
+          "id": "ENCHANTED_GOLD:10",
+          "chance": "50%"
+        },
+        {
+          "id": "MINOS_RELIC",
+          "chance": "0.05%"
+        },
+        {
+          "id": "DYE_MYTHOLOGICAL",
+          "chance": "0.0004%"
+        }
+      ]
+    },
+    {
+      "level": 248,
+      "coins": 82,
+      "combat_xp": 372,
+      "xp": 272,
+      "name": "§2Exalted Minos Champion",
+      "render": "@neurepo:mobs/minos_champion.json",
+      "panorama": "hub",
+      "type": "drops",
+      "drops": [
+        {
+          "id": "ANCIENT_CLAW:12",
+          "chance": "100%"
+        },
+        {
+          "id": "ENCHANTED_GOLD:12",
+          "chance": "50%"
+        },
+        {
+          "id": "MINOS_RELIC",
+          "chance": "0.1%"
+        },
+        {
+          "id": "DYE_MYTHOLOGICAL",
+          "chance": "0.0004%"
+        }
+      ]
+    },
+    {
+      "level": 285,
+      "coins": 95,
+      "combat_xp": 427,
+      "xp": 313,
+      "name": "§2Empyrean Minos Champion",
+      "render": "@neurepo:mobs/minos_champion.json",
+      "panorama": "hub",
+      "type": "drops",
+      "drops": [
+        {
+          "id": "ANCIENT_CLAW:14",
+          "chance": "100%"
+        },
+        {
+          "id": "ENCHANTED_GOLD:14",
+          "chance": "50%"
+        },
+        {
+          "id": "MINOS_RELIC",
+          "chance": "0.15%"
+        },
+        {
+          "id": "DYE_MYTHOLOGICAL",
+          "chance": "0.0004%"
+        }
+      ]
+    }
+  ]
+}

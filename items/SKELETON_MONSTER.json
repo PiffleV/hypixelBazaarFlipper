@@ -1,0 +1,39 @@
+{
+  "itemid": "minecraft:skull",
+  "displayname": "§aSkeleton §7(§cMonster§7)",
+  "nbttag": "{ExtraAttributes:{id:\"SKELETON_MONSTER\"},HideFlags:254,ItemModel:\"minecraft:skeleton_skull\",display:{Lore:[0:\"§7Mob Type: §f Skeletal\",1:\"\",2:\"§7Just a normal skelly.\",3:\"\",4:\"§7Found on §aPrivate Islands§7.\"],Name:\"§aSkeleton §7(§cMonster§7)\"}}",
+  "damage": 0,
+  "lore": [
+    "§7Mob Type: §f Skeletal",
+    "",
+    "§7Just a normal skelly.",
+    "",
+    "§7Found on §aPrivate Islands§7."
+  ],
+  "internalname": "SKELETON_MONSTER",
+  "clickcommand": "viewrecipe",
+  "crafttext": "",
+  "modver": "Firmament 44.2.0-dev+mc26.2+g955aae4",
+  "infoType": "WIKI_URL",
+  "info": [
+    "https://hypixelskyblock.minecraft.wiki/w/Skeleton"
+  ],
+  "recipes": [
+    {
+      "name": "§aSkeleton",
+      "render": "Skeleton",
+      "panorama": "dynamic",
+      "type": "drops",
+      "drops": [
+        {
+          "id": "BONE",
+          "chance": "100%"
+        },
+        {
+          "id": "DYE_BONE",
+          "chance": "0.000033%"
+        }
+      ]
+    }
+  ]
+}

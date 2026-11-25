@@ -1,0 +1,22 @@
+{
+  "itemid": "minecraft:paper",
+  "displayname": "§aExpired Pumpkin",
+  "nbttag": "{ExtraAttributes:{id:\"EXPIRED_PUMPKIN\"},HideFlags:254,ItemModel:\"hypixel_skyblock:item/great_spook/expired_pumpkin\",display:{Lore:[0:\"§7Bring §63,000 §7of these to §5Carrolyn §7in\",1:\"§5Scarleton §7on the §cCrimson Isle §7to\",2:\"§7permanently gain §c+5 Health §7and\",3:\"§6+12 Pumpkin Fortune§7.\",4:\"\",5:\"§a§lUNCOMMON\"],Name:\"§aExpired Pumpkin\"}}",
+  "damage": 0,
+  "lore": [
+    "§7Bring §63,000 §7of these to §5Carrolyn §7in",
+    "§5Scarleton §7on the §cCrimson Isle §7to",
+    "§7permanently gain §c+5 Health §7and",
+    "§6+12 Pumpkin Fortune§7.",
+    "",
+    "§a§lUNCOMMON"
+  ],
+  "internalname": "EXPIRED_PUMPKIN",
+  "clickcommand": "",
+  "crafttext": "",
+  "modver": "Firmament 44.3.0-dev+mc26.2+ga5fdc6d2",
+  "infoType": "WIKI_URL",
+  "info": [
+    "https://hypixelskyblock.minecraft.wiki/w/Expired_Pumpkin"
+  ]
+}

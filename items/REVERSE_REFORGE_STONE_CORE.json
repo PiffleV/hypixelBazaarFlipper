@@ -1,0 +1,22 @@
+{
+  "itemid": "minecraft:paper",
+  "displayname": "§9eroC enotS egrofeR",
+  "nbttag": "{ExtraAttributes:{id:\"REVERSE_REFORGE_STONE_CORE\"},HideFlags:254,ItemModel:\"hypixel_skyblock:item/fishing/lotus_atoll/eroc_enots_egrofer\",display:{Lore:[0:\"§7⸮morf emoc ti did erehw dna ,gniht\",1:\"§7siht si htrae no tahW\",2:\"\",3:\"§e!sepicer weiv ot kcilc-thgiR\",4:\"\",5:\"§9§lERAR\"],Name:\"§9eroC enotS egrofeR\"}}",
+  "damage": 0,
+  "lore": [
+    "§7⸮morf emoc ti did erehw dna ,gniht",
+    "§7siht si htrae no tahW",
+    "",
+    "§e!sepicer weiv ot kcilc-thgiR",
+    "",
+    "§9§lERAR"
+  ],
+  "internalname": "REVERSE_REFORGE_STONE_CORE",
+  "clickcommand": "",
+  "crafttext": "",
+  "modver": "Firmament 44.3.0-dev+mc26.2+ga5fdc6d2",
+  "infoType": "WIKI_URL",
+  "info": [
+    "https://hypixelskyblock.minecraft.wiki/w/eroC_enotS_egrofeR"
+  ]
+}

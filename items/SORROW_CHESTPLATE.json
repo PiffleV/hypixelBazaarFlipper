@@ -1,0 +1,44 @@
+{
+  "itemid": "minecraft:chainmail_chestplate",
+  "displayname": "§6Sorrow Chestplate",
+  "nbttag": "{ExtraAttributes:{id:\"SORROW_CHESTPLATE\"},HideFlags:254,ItemModel:\"minecraft:chainmail_chestplate\",Unbreakable:1B,display:{Lore:[0:\"§7True Defense: §f+80\",1:\"§7Mining Speed: §6+50\",2:\"§7Mining Fortune: §6+20\",3:\"§7Gemstones: §8[§7§8] [] [❂]\",4:\"\",5:\"§62-Piece Set Bonus: Mist Aura\",6:\"§7Hides the wearer in a guise of mist,\",7:\"§7multiplying damage from ghosts by\",8:\"§c0.6x§7.\",9:\"\",10:\"§8Tiered Bonus: Gravekeeper (0/4)\",11:\"§7Deal §a+10% §7damage to §fGhosts §7and gain\",12:\"§b+5 Magic Find §7on them.\",13:\"\",14:\"§8This item can be reforged!\",15:\"§4❣ §cRequires §5Heart of the Mountain Tier 5§c.\",16:\"§6§lLEGENDARY CHESTPLATE\"],Name:\"§6Sorrow Chestplate\"}}",
+  "damage": 0,
+  "lore": [
+    "§7True Defense: §f+80",
+    "§7Mining Speed: §6+50",
+    "§7Mining Fortune: §6+20",
+    "§7Gemstones: §8[§7§8] [] [❂]",
+    "",
+    "§62-Piece Set Bonus: Mist Aura",
+    "§7Hides the wearer in a guise of mist,",
+    "§7multiplying damage from ghosts by",
+    "§c0.6x§7.",
+    "",
+    "§8Tiered Bonus: Gravekeeper (0/4)",
+    "§7Deal §a+10% §7damage to §fGhosts §7and gain",
+    "§b+5 Magic Find §7on them.",
+    "",
+    "§8This item can be reforged!",
+    "§4❣ §cRequires §5Heart of the Mountain Tier 5§c.",
+    "§6§lLEGENDARY CHESTPLATE"
+  ],
+  "internalname": "SORROW_CHESTPLATE",
+  "clickcommand": "viewrecipe",
+  "crafttext": "",
+  "modver": "Firmament 44.3.0-dev+mc26.2+gb8c48d14",
+  "infoType": "WIKI_URL",
+  "info": [
+    "https://hypixelskyblock.minecraft.wiki/w/Sorrow_Chestplate"
+  ],
+  "recipe": {
+    "A1": "SORROW:3",
+    "A2": "",
+    "A3": "SORROW:3",
+    "B1": "SORROW:3",
+    "B2": "SORROW:3",
+    "B3": "SORROW:3",
+    "C1": "SORROW:3",
+    "C2": "SORROW:3",
+    "C3": "SORROW:3"
+  }
+}

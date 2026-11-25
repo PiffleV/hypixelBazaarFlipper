@@ -1,0 +1,39 @@
+{
+  "itemid": "minecraft:skull",
+  "displayname": "§4Voidcrazed Maniac §7(§c§lMINIBOSS§r§7)",
+  "nbttag": "{ExtraAttributes:{id:\"VOIDCRAZED_MANIAC_MINIBOSS\"},HideFlags:254,ItemModel:\"minecraft:player_head\",SkullOwner:{Id:\"0de98464-1274-4dd6-bba8-370efa5d41a8\",Properties:{textures:[0:{Name:\"textures\",Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2E1OWJiMGE3YTMyOTY1YjNkOTBkOGVhZmE4OTlkMTgzNWY0MjQ1MDllYWRkNGU2YjcwOWFkYTUwYjljZiJ9fX0=\"}]},hypixelPopulated:1B},display:{Lore:[0:\"§7Mob Type: §5 Ender\",1:\"\",2:\"§7They just can't get enough §3Soulflow§7. They might even\",3:\"§7tear apart an adventurer or two to get more.\",4:\"\",5:\"§4Voidcrazed Maniac §7spawn from slain §dEndermen §7while,\",6:\"§7fulfilling a §5Voidgloom Seraph §4Tier IV §7Quest.\"],Name:\"§4Voidcrazed Maniac §7(§c§lMINIBOSS§r§7)\"}}",
+  "damage": 3,
+  "lore": [
+    "§7Mob Type: §5 Ender",
+    "",
+    "§7They just can't get enough §3Soulflow§7. They might even",
+    "§7tear apart an adventurer or two to get more.",
+    "",
+    "§4Voidcrazed Maniac §7spawn from slain §dEndermen §7while,",
+    "§7fulfilling a §5Voidgloom Seraph §4Tier IV §7Quest."
+  ],
+  "internalname": "VOIDCRAZED_MANIAC_MINIBOSS",
+  "clickcommand": "viewrecipe",
+  "crafttext": "",
+  "modver": "Firmament 3.7.1-dev+mc1.21.5+g19c6b28",
+  "infoType": "WIKI_URL",
+  "info": [
+    "https://hypixelskyblock.minecraft.wiki/w/Voidcrazed_Maniac"
+  ],
+  "recipes": [
+    {
+      "level": 512,
+      "combat_xp": 3840,
+      "xp": 1536,
+      "name": "§4Voidcrazed Maniac",
+      "render": "Enderman",
+      "panorama": "combat_3",
+      "type": "drops",
+      "drops": [
+        {
+          "id": "NULL_SPHERE:5"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "itemid": "minecraft:skull",
+  "displayname": "§2Ghost §7(§cMonster§7)",
+  "nbttag": "{ExtraAttributes:{id:\"GHOST_MONSTER\"},HideFlags:254,ItemModel:\"minecraft:player_head\",SkullOwner:{Id:\"c5752211-7503-3e77-9890-d1cf6ba1d0e7\",Properties:{textures:[0:{Name:\"textures\",Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTgxOTc3OTE4YTExODBlMGRlYzg3OWU2YmNkMWFhMzk0OTQ5NzdiYjkxM2JlMmFiMDFhZmYxZGIxZmE0In19fQ\"}]},hypixelPopulated:1B},display:{Lore:[0:\"§7Mob Types: §5 Arcane§7, §6 Subterranean\",1:\"\",2:\"§7It is hard to find that which you\",3:\"§7cannot see.\",4:\"\",5:\"§7Found in §8The Mist §7at the bottom of\",6:\"§7the §2Dwarven Mines§7.\"],Name:\"§2Ghost §7(§cMonster§7)\"}}",
+  "damage": 3,
+  "lore": [
+    "§7Mob Types: §5 Arcane§7, §6 Subterranean",
+    "",
+    "§7It is hard to find that which you",
+    "§7cannot see.",
+    "",
+    "§7Found in §8The Mist §7at the bottom of",
+    "§7the §2Dwarven Mines§7."
+  ],
+  "internalname": "GHOST_MONSTER",
+  "clickcommand": "viewrecipe",
+  "crafttext": "",
+  "modver": "Firmament 44.2.0-dev+mc26.2+g955aae4",
+  "infoType": "WIKI_URL",
+  "info": [
+    "https://hypixelskyblock.minecraft.wiki/w/Ghost"
+  ],
+  "recipes": [
+    {
+      "level": 157,
+      "coins": 52,
+      "combat_xp": 100,
+      "xp": 172,
+      "name": "§2Ghost",
+      "render": "@neurepo:mobs/ghost.json",
+      "panorama": "mining_3",
+      "type": "drops",
+      "drops": [
+        {
+          "id": "VOLTA",
+          "chance": "1%"
+        },
+        {
+          "id": "SORROW",
+          "chance": "0.4%"
+        },
+        {
+          "id": "PLASMA",
+          "chance": "0.4%"
+        },
+        {
+          "id": "GHOST_BOOTS",
+          "chance": "0.02%"
+        },
+        {
+          "id": "ATTRIBUTE_SHARD_VEIL;1",
+          "extra": [
+            "§7 - Catch with §cPocket Black Hole§7.",
+            "§7 - Charm §cGhost§7."
+          ]
+        }
+      ]
+    }
+  ]
+}

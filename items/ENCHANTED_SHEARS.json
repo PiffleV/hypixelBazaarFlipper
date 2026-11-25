@@ -1,0 +1,35 @@
+{
+  "itemid": "minecraft:shears",
+  "displayname": "§fEnchanted Shears",
+  "nbttag": "{ExtraAttributes:{id:\"ENCHANTED_SHEARS\"},HideFlags:254,ItemModel:\"minecraft:shears\",Unbreakable:1B,display:{Lore:[0:\"§8Minion Upgrade\",1:\"\",2:\"§7This item can be used as a minion\",3:\"§7upgrade for sheep generators. This\",4:\"§7will automatically shear sheep for\",5:\"§7you as they spawn.\",6:\"\",7:\"§f§lCOMMON SHEARS\"],Name:\"§fEnchanted Shears\"},ench:[]}",
+  "damage": 0,
+  "lore": [
+    "§8Minion Upgrade",
+    "",
+    "§7This item can be used as a minion",
+    "§7upgrade for sheep generators. This",
+    "§7will automatically shear sheep for",
+    "§7you as they spawn.",
+    "",
+    "§f§lCOMMON SHEARS"
+  ],
+  "internalname": "ENCHANTED_SHEARS",
+  "clickcommand": "viewrecipe",
+  "crafttext": "",
+  "modver": "Firmament 44.2.0-dev+mc26.2+g955aae4",
+  "infoType": "WIKI_URL",
+  "info": [
+    "https://hypixelskyblock.minecraft.wiki/w/Enchanted_Shears"
+  ],
+  "recipe": {
+    "A1": "",
+    "A2": "",
+    "A3": "",
+    "B1": "",
+    "B2": "",
+    "B3": "ENCHANTED_IRON:1",
+    "C1": "",
+    "C2": "ENCHANTED_IRON:1",
+    "C3": ""
+  }
+}

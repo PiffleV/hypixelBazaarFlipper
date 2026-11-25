@@ -1,0 +1,21 @@
+{
+  "itemid": "minecraft:paper",
+  "displayname": "§9Dark Candy",
+  "nbttag": "{ExtraAttributes:{id:\"DARK_CANDY\"},HideFlags:254,ItemModel:\"hypixel_skyblock:item/great_spook/dark_candy\",display:{Lore:[0:\"§7Can be brought to §cVargul the\",1:\"§cUnearthed §7at the back of the Hub\",2:\"§7island during the §5Great Spook§7.\",3:\"\",4:\"§9§lRARE\"],Name:\"§9Dark Candy\"}}",
+  "damage": 0,
+  "lore": [
+    "§7Can be brought to §cVargul the",
+    "§cUnearthed §7at the back of the Hub",
+    "§7island during the §5Great Spook§7.",
+    "",
+    "§9§lRARE"
+  ],
+  "internalname": "DARK_CANDY",
+  "clickcommand": "",
+  "crafttext": "",
+  "modver": "Firmament 44.3.0-dev+mc26.2+ga5fdc6d2",
+  "infoType": "WIKI_URL",
+  "info": [
+    "https://hypixelskyblock.minecraft.wiki/w/Dark_Candy"
+  ]
+}

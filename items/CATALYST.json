@@ -1,0 +1,34 @@
+{
+  "itemid": "minecraft:nether_star",
+  "displayname": "§9Catalyst",
+  "nbttag": "{ExtraAttributes:{id:\"CATALYST\"},HideFlags:254,ItemModel:\"minecraft:nether_star\",display:{Lore:[0:\"§8Minion Fuel\",1:\"\",2:\"§7When in a minion, this increases the\",3:\"§7number of resources created by §a3x\",4:\"§7for §a3 hours§7!\",5:\"\",6:\"§9§lRARE\"],Name:\"§9Catalyst\"}}",
+  "damage": 0,
+  "lore": [
+    "§8Minion Fuel",
+    "",
+    "§7When in a minion, this increases the",
+    "§7number of resources created by §a3x",
+    "§7for §a3 hours§7!",
+    "",
+    "§9§lRARE"
+  ],
+  "internalname": "CATALYST",
+  "clickcommand": "viewrecipe",
+  "crafttext": "Requires: End Stone IX",
+  "modver": "Firmament 44.3.0-dev+mc26.2+g3fba44e7",
+  "infoType": "WIKI_URL",
+  "info": [
+    "https://hypixelskyblock.minecraft.wiki/w/Catalyst"
+  ],
+  "recipe": {
+    "A1": "ENDER_STONE:1",
+    "A2": "ENDER_STONE:1",
+    "A3": "ENDER_STONE:1",
+    "B1": "ENDER_STONE:1",
+    "B2": "CRYSTAL_FRAGMENT:1",
+    "B3": "ENDER_STONE:1",
+    "C1": "ENDER_STONE:1",
+    "C2": "ENDER_STONE:1",
+    "C3": "ENDER_STONE:1"
+  }
+}

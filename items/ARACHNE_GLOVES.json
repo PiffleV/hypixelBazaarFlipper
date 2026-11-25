@@ -1,0 +1,27 @@
+{
+  "itemid": "minecraft:paper",
+  "displayname": "§9Arachne's Gloves",
+  "nbttag": "{ExtraAttributes:{id:\"ARACHNE_GLOVES\"},HideFlags:254,ItemModel:\"hypixel_skyblock:item/combat_1/arachne_gloves\",display:{Lore:[0:\"§7Health: §c+10\",1:\"§7Defense: §a+5\",2:\"\",3:\"§8Tiered Bonus: Arachne's Faithful (0/8)\",4:\"§7Grants §c+5 Health §7and §a+5 Defense§7.\",5:\"\",6:\"§eRight-click to equip!\",7:\"\",8:\"§8This item can be reforged!\",9:\"§8§l* §8Co-op Soulbound §8§l*\",10:\"§9§lRARE GLOVES\"],Name:\"§9Arachne's Gloves\"}}",
+  "damage": 0,
+  "lore": [
+    "§7Health: §c+10",
+    "§7Defense: §a+5",
+    "",
+    "§8Tiered Bonus: Arachne's Faithful (0/8)",
+    "§7Grants §c+5 Health §7and §a+5 Defense§7.",
+    "",
+    "§eRight-click to equip!",
+    "",
+    "§8This item can be reforged!",
+    "§8§l* §8Co-op Soulbound §8§l*",
+    "§9§lRARE GLOVES"
+  ],
+  "internalname": "ARACHNE_GLOVES",
+  "clickcommand": "",
+  "crafttext": "",
+  "modver": "Firmament 44.2.0-dev+mc26.2+g8fc86f6b",
+  "infoType": "WIKI_URL",
+  "info": [
+    "https://hypixelskyblock.minecraft.wiki/w/Arachne%27s_Gloves"
+  ]
+}

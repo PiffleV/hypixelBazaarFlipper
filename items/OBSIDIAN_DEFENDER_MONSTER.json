@@ -1,0 +1,66 @@
+{
+  "itemid": "minecraft:skull",
+  "displayname": "§dObsidian Defender §7(§cMonster§7)",
+  "nbttag": "{ExtraAttributes:{id:\"OBSIDIAN_DEFENDER_MONSTER\"},HideFlags:254,ItemModel:\"minecraft:wither_skeleton_skull\",display:{Lore:[0:\"§7Mob types: §5 Ender§7, §8 Wither\",1:\"\",2:\"§7Forged from the forces of hot and cold.\",3:\"\",4:\"§7Found defending the §5Dragons's Nest §7of §dThe End§7.\"],Name:\"§dObsidian Defender §7(§cMonster§7)\"}}",
+  "damage": 1,
+  "lore": [
+    "§7Mob types: §5 Ender§7, §8 Wither",
+    "",
+    "§7Forged from the forces of hot and cold.",
+    "",
+    "§7Found defending the §5Dragons's Nest §7of §dThe End§7."
+  ],
+  "internalname": "OBSIDIAN_DEFENDER_MONSTER",
+  "clickcommand": "viewrecipe",
+  "crafttext": "",
+  "modver": "Firmament 44.2.0-dev+mc26.2+g955aae4",
+  "infoType": "WIKI_URL",
+  "info": [
+    "https://hypixelskyblock.minecraft.wiki/w/Obsidian_Defender"
+  ],
+  "recipes": [
+    {
+      "level": 44,
+      "coins": 14,
+      "combat_xp": 66,
+      "xp": 48,
+      "name": "§dObsidian Defender",
+      "render": "@neurepo:mobs/obsidian_defender.json",
+      "panorama": "combat_3",
+      "type": "drops",
+      "drops": [
+        {
+          "id": "OBSIDIAN",
+          "chance": "100%"
+        },
+        {
+          "id": "ENDER_BELT",
+          "chance": "2.5%"
+        },
+        {
+          "id": "ENCHANTED_OBSIDIAN",
+          "chance": "1%"
+        },
+        {
+          "id": "OBSIDIAN_CHESTPLATE",
+          "chance": "0.5%"
+        },
+        {
+          "id": "DYE_BONE",
+          "chance": "0.000033%"
+        },
+        {
+          "id": "DYE_PEARLESCENT",
+          "chance": "0.00003%"
+        },
+        {
+          "id": "ATTRIBUTE_SHARD_SPEED;1",
+          "extra": [
+            "§7 - Catch with §cPocket Black Hole§7.",
+            "§7 - Charm §cObsidian Defender§7."
+          ]
+        }
+      ]
+    }
+  ]
+}

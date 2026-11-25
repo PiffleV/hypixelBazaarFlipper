@@ -1,0 +1,20 @@
+{
+  "itemid": "minecraft:potion",
+  "displayname": "§aVenomous IV Potion",
+  "nbttag": "{CustomPotionEffects:[0:{Ambient:0B,Amplifier:0B,Duration:900,Id:19B},1:{Ambient:0B,Amplifier:3B,Duration:20,Id:19B}],ExtraAttributes:{effects:[0:{duration_ticks:3600,effect:\"venomous\",level:4}],id:\"POTION_VENOMOUS;4\",potion:\"venomous\",potion_level:4,potion_type:\"POTION\"},HideFlags:254,ItemModel:\"minecraft:potion\",display:{Lore:[0:\"\",1:\"§5Venomous IV §f(3:00)\",2:\"§7Grants §c-20 §f Speed §7and deals §c20\",3:\"§7damage per second.\",4:\"\",5:\"§a§lUNCOMMON\"],Name:\"§aVenomous IV Potion\"}}",
+  "damage": 0,
+  "lore": [
+    "",
+    "§5Venomous IV §f(3:00)",
+    "§7Grants §c-20 §f Speed §7and deals §c20",
+    "§7damage per second.",
+    "",
+    "§a§lUNCOMMON"
+  ],
+  "internalname": "POTION_VENOMOUS;4",
+  "clickcommand": "viewpotion",
+  "crafttext": "",
+  "modver": "Firmament 44.3.0-dev+mc26.2+g3fba44e7",
+  "infoType": "",
+  "info": []
+}

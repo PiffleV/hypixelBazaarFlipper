@@ -1,0 +1,35 @@
+{
+  "itemid": "minecraft:paper",
+  "displayname": "§dRift Necklace",
+  "nbttag": "{ExtraAttributes:{id:\"RIFT_NECKLACE_OUTSIDE\",rift_timecharms:8},HideFlags:254,ItemModel:\"hypixel_skyblock:item/island_relevant/rift/equipment/necklace/rift_necklace_outside\",display:{Lore:[0:\"§7Health: §c+150\",1:\"§7Defense: §a+30\",2:\"§7True Defense: §f+4\",3:\"§7Strength: §c+25\",4:\"§7Intelligence: §b+85\",5:\"§7Combat Wisdom: §3+1\",6:\"§7Farming Wisdom: §3+1\",7:\"§7Enchanting Wisdom: §3+1\",8:\"\",9:\"§7Gains more stats and increases in\",10:\"§7rarity as you obtain more §cTimecharms§7.\",11:\"\",12:\"§7Obtained: §c8/8 Timecharms\",13:\"\",14:\"§eRight-click to equip!\",15:\"\",16:\"§8This item can be reforged!\",17:\"§8§l* §8Soulbound §8§l*\",18:\"§d§lMYTHIC NECKLACE\"],Name:\"§dRift Necklace\"}}",
+  "damage": 0,
+  "lore": [
+    "§7Health: §c+150",
+    "§7Defense: §a+30",
+    "§7True Defense: §f+4",
+    "§7Strength: §c+25",
+    "§7Intelligence: §b+85",
+    "§7Combat Wisdom: §3+1",
+    "§7Farming Wisdom: §3+1",
+    "§7Enchanting Wisdom: §3+1",
+    "",
+    "§7Gains more stats and increases in",
+    "§7rarity as you obtain more §cTimecharms§7.",
+    "",
+    "§7Obtained: §c8/8 Timecharms",
+    "",
+    "§eRight-click to equip!",
+    "",
+    "§8This item can be reforged!",
+    "§8§l* §8Soulbound §8§l*",
+    "§d§lMYTHIC NECKLACE"
+  ],
+  "internalname": "RIFT_NECKLACE_OUTSIDE",
+  "clickcommand": "",
+  "crafttext": "",
+  "modver": "Firmament 44.3.0-dev+mc26.2+gb8c48d14",
+  "infoType": "WIKI_URL",
+  "info": [
+    "https://hypixelskyblock.minecraft.wiki/w/Rift_Necklace"
+  ]
+}

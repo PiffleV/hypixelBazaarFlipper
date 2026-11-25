@@ -1,0 +1,29 @@
+{
+  "itemid": "minecraft:fireworks",
+  "displayname": "§fFirework Rocket",
+  "nbttag": "{ExtraAttributes:{id:\"FIREWORK\"},HideFlags:254,ItemModel:\"minecraft:firework_rocket\",display:{Lore:[0:\"§f§lCOMMON\"],Name:\"§fFirework Rocket\"}}",
+  "damage": 0,
+  "lore": [
+    "§f§lCOMMON"
+  ],
+  "internalname": "FIREWORK",
+  "clickcommand": "viewrecipe",
+  "crafttext": "",
+  "modver": "Firmament 44.2.0-dev+mc26.2+g955aae4",
+  "infoType": "WIKI_URL",
+  "info": [
+    "https://hypixelskyblock.minecraft.wiki/w/Firework_Rocket"
+  ],
+  "recipe": {
+    "A1": "PAPER:1",
+    "A2": "SULPHUR:1",
+    "A3": "",
+    "B1": "",
+    "B2": "",
+    "B3": "",
+    "C1": "",
+    "C2": "",
+    "C3": ""
+  },
+  "vanilla": true
+}

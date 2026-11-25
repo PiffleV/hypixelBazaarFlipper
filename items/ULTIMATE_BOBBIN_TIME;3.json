@@ -1,0 +1,56 @@
+{
+  "itemid": "minecraft:enchanted_book",
+  "displayname": "§fEnchanted Book",
+  "nbttag": "{ExtraAttributes:{enchantments:{ultimate_bobbin_time:3},id:\"ULTIMATE_BOBBIN_TIME;3\"},HideFlags:254,ItemModel:\"minecraft:enchanted_book\",display:{Lore:[0:\"§8Combinable in Anvil\",1:\"\",2:\"§d§lBobbin' Time III\",3:\"§7Grants the following stats for each\",4:\"§7bobber within §a30 blocks§7, up to §b5\",5:\"§7bobbers.\",6:\"§8• §b+0.6% §7to all §bFishing Stats§7.\",7:\"§8• §d+0.6 Tracking §7on §3Sea Creatures§7.\",8:\"§8• §b+0.6 Magic Find §7on §3Sea Creatures§7.\",9:\"\",10:\"§cYou can only have 1 Ultimate\",11:\"§cEnchantment on an item!\",12:\"\",13:\"§6Sources:\",14:\" §7- Fishing (§aIII§7)\",15:\" §7- Bazaar (§aIII-V§7)\",16:\"\",17:\"§6Applied To:\",18:\" §7- §fArmor\",19:\"\",20:\"§6Requirements:\",21:\" §7- §bEnchanting Level 24\",22:\"\",23:\"§f§lCOMMON\"],Name:\"§fEnchanted Book\"},ench:[]}",
+  "damage": 0,
+  "lore": [
+    "§8Combinable in Anvil",
+    "",
+    "§d§lBobbin' Time III",
+    "§7Grants the following stats for each",
+    "§7bobber within §a30 blocks§7, up to §b5",
+    "§7bobbers.",
+    "§8• §b+0.6% §7to all §bFishing Stats§7.",
+    "§8• §d+0.6 Tracking §7on §3Sea Creatures§7.",
+    "§8• §b+0.6 Magic Find §7on §3Sea Creatures§7.",
+    "",
+    "§cYou can only have 1 Ultimate",
+    "§cEnchantment on an item!",
+    "",
+    "§6Sources:",
+    " §7- Fishing (§aIII§7)",
+    " §7- Bazaar (§aIII-V§7)",
+    "",
+    "§6Applied To:",
+    " §7- §fArmor",
+    "",
+    "§6Requirements:",
+    " §7- §bEnchanting Level 24",
+    "",
+    "§f§lCOMMON"
+  ],
+  "internalname": "ULTIMATE_BOBBIN_TIME;3",
+  "clickcommand": "viewrecipe",
+  "crafttext": "",
+  "modver": "Firmament 3.4.0-dev+mc1.21.5+g4cd6602",
+  "infoType": "WIKI_URL",
+  "info": [
+    "https://hypixelskyblock.minecraft.wiki/w/Bobbin%27_Time"
+  ],
+  "recipes": [
+    {
+      "A1": "BAYOU_WATER_ORB:1",
+      "A2": "WINTER_WATER_ORB:1",
+      "A3": "SPOOKY_WATER_ORB:1",
+      "B1": "",
+      "B2": "BOBBIN_SCRIPTURES:1",
+      "B3": "",
+      "C1": "SHARK_WATER_ORB:1",
+      "C2": "HOTSPOT_WATER_ORB:1",
+      "C3": "LAVA_WATER_ORB:1",
+      "type": "crafting",
+      "count": 1,
+      "overrideOutputId": "ULTIMATE_BOBBIN_TIME;3"
+    }
+  ]
+}

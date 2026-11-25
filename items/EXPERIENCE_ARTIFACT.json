@@ -1,0 +1,33 @@
+{
+  "itemid": "minecraft:enchanted_book",
+  "displayname": "§5Experience Artifact",
+  "nbttag": "{ExtraAttributes:{id:\"EXPERIENCE_ARTIFACT\"},HideFlags:254,ItemModel:\"minecraft:enchanted_book\",display:{Lore:[0:\"§7Accessory Power: §6+12\",1:\"\",2:\"§7Earn §a+25% XP Orbs §7from all sources.\",3:\"\",4:\"§8Works while in Accessory Bag!\",5:\"§5§lEPIC ACCESSORY\"],Name:\"§5Experience Artifact\"}}",
+  "damage": 0,
+  "lore": [
+    "§7Accessory Power: §6+12",
+    "",
+    "§7Earn §a+25% XP Orbs §7from all sources.",
+    "",
+    "§8Works while in Accessory Bag!",
+    "§5§lEPIC ACCESSORY"
+  ],
+  "internalname": "EXPERIENCE_ARTIFACT",
+  "clickcommand": "viewrecipe",
+  "crafttext": "Requires: Lapis Lazuli IX",
+  "modver": "Firmament 44.2.0-dev+mc26.2+g695a31df",
+  "infoType": "WIKI_URL",
+  "info": [
+    "https://hypixelskyblock.minecraft.wiki/w/Experience_Artifact"
+  ],
+  "recipe": {
+    "A1": "ENCHANTED_LAPIS_LAZULI_BLOCK:1",
+    "A2": "ENCHANTED_LAPIS_LAZULI_BLOCK:1",
+    "A3": "ENCHANTED_LAPIS_LAZULI_BLOCK:1",
+    "B1": "ENCHANTED_LAPIS_LAZULI_BLOCK:1",
+    "B2": "ENCHANTED_LAPIS_LAZULI_BLOCK:1",
+    "B3": "ENCHANTED_LAPIS_LAZULI_BLOCK:1",
+    "C1": "ENCHANTED_LAPIS_LAZULI_BLOCK:1",
+    "C2": "ENCHANTED_LAPIS_LAZULI_BLOCK:1",
+    "C3": "ENCHANTED_LAPIS_LAZULI_BLOCK:1"
+  }
+}

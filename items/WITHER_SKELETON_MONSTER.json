@@ -1,0 +1,75 @@
+{
+  "itemid": "minecraft:skull",
+  "displayname": "§cWither Skeleton §7(§cMonster§7)",
+  "nbttag": "{ExtraAttributes:{id:\"WITHER_SKELETON_MONSTER\"},HideFlags:254,ItemModel:\"minecraft:wither_skeleton_skull\",display:{Lore:[0:\"§7Mob Types: §8 Wither§7, §f Skeletal\",1:\"\",2:\"§7Keepers of the Crimson Isle.\",3:\"\",4:\"§7Found in the §5Stronghold §7of\",5:\"§7the §cCrimson Isle§7.\"],Name:\"§cWither Skeleton §7(§cMonster§7)\"}}",
+  "damage": 1,
+  "lore": [
+    "§7Mob Types: §8 Wither§7, §f Skeletal",
+    "",
+    "§7Keepers of the Crimson Isle.",
+    "",
+    "§7Found in the §5Stronghold §7of",
+    "§7the §cCrimson Isle§7."
+  ],
+  "internalname": "WITHER_SKELETON_MONSTER",
+  "clickcommand": "viewrecipe",
+  "crafttext": "",
+  "modver": "Firmament 44.2.0-dev+mc26.2+g955aae4",
+  "infoType": "WIKI_URL",
+  "info": [
+    "https://hypixelskyblock.minecraft.wiki/w/Wither_Skeleton"
+  ],
+  "recipes": [
+    {
+      "level": 144,
+      "coins": 48,
+      "combat_xp": 216,
+      "xp": 158,
+      "name": "§cWither Skeleton",
+      "render": "@neurepo:mobs/wither_skeleton.json",
+      "panorama": "crimson_isle",
+      "type": "drops",
+      "drops": [
+        {
+          "id": "COAL",
+          "extra": [
+            "§eDrop Count: §7x8-9"
+          ],
+          "chance": "100%"
+        },
+        {
+          "id": "BONE:8",
+          "chance": "100%"
+        },
+        {
+          "id": "WITHER_SOUL",
+          "chance": "20%"
+        },
+        {
+          "id": "ENCHANTED_COAL:2",
+          "chance": "5%"
+        },
+        {
+          "id": "ENCHANTED_BONE",
+          "chance": "5%"
+        },
+        {
+          "id": "RAMPART_CHESTPLATE",
+          "chance": "1%"
+        },
+        {
+          "id": "ENCHANTED_CHARCOAL",
+          "chance": "1%"
+        },
+        {
+          "id": "DYE_BONE",
+          "chance": "0.000033%"
+        },
+        {
+          "id": "DYE_CYCLAMEN",
+          "chance": "0.00001%"
+        }
+      ]
+    }
+  ]
+}

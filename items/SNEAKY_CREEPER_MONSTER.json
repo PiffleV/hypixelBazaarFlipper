@@ -1,0 +1,48 @@
+{
+  "itemid": "minecraft:skull",
+  "displayname": "§bSneaky Creeper §7(§cMonster§7)",
+  "nbttag": "{ExtraAttributes:{id:\"SNEAKY_CREEPER_MONSTER\"},HideFlags:254,ItemModel:\"minecraft:creeper_head\",display:{Lore:[0:\"§7Mob Type: §a Cubic\",1:\"\",2:\"§7They be creepin'.\",3:\"\",4:\"§7Found in the §bGunpower Mines §7of\",5:\"§7the §eDeep Caverns§7.\"],Name:\"§bSneaky Creeper §7(§cMonster§7)\"}}",
+  "damage": 4,
+  "lore": [
+    "§7Mob Type: §a Cubic",
+    "",
+    "§7They be creepin'.",
+    "",
+    "§7Found in the §bGunpower Mines §7of",
+    "§7the §eDeep Caverns§7."
+  ],
+  "internalname": "SNEAKY_CREEPER_MONSTER",
+  "clickcommand": "viewrecipe",
+  "crafttext": "",
+  "modver": "Firmament 44.2.0-dev+mc26.2+g955aae4",
+  "infoType": "WIKI_URL",
+  "info": [
+    "https://hypixelskyblock.minecraft.wiki/w/Sneaky_Creeper"
+  ],
+  "recipes": [
+    {
+      "level": 5,
+      "coins": 1,
+      "combat_xp": 7,
+      "xp": 5,
+      "name": "§bSneaky Creeper",
+      "panorama": "mining_2",
+      "render": "Creeper",
+      "type": "drops",
+      "drops": [
+        {
+          "id": "SULPHUR",
+          "chance": "100%"
+        },
+        {
+          "id": "ENCHANTED_GUNPOWDER",
+          "chance": "0.5%"
+        },
+        {
+          "id": "PET_ITEM_EXP_SHARE_DROP",
+          "chance": "0.02%"
+        }
+      ]
+    }
+  ]
+}

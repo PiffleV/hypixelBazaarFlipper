@@ -1,0 +1,26 @@
+{
+  "itemid": "minecraft:skull",
+  "displayname": "§c◆ Grand Freezing Rune III",
+  "nbttag": "{ExtraAttributes:{id:\"GRAND_FREEZING_RUNE;3\",runes:{GRAND_FREEZING:3}},HideFlags:254,ItemModel:\"minecraft:player_head\",SkullOwner:{Id:\"7234676e-cf24-3121-a6d9-266afa4e2faa\",Properties:{textures:[0:{Name:\"textures\",Signature:\"ES2k5TSwQaOQfWW1bqpd/1wWl9+/EJ7DsSLXD54JgxSRecqRRy49jLjHB5Q44Cte3zRCa3kW+ej3SmALpbhhXGiZ7fuNJ3ow/RELTMgirxyJ005ZxRGJ3LH0hXVec1vOpE0I6/BYpxXHlB9y8tJaxJPjXKrIPTZ8T+G4MNIz+tP3qK11dBDCMGCQhle0x9hdbUmmJ9eBfoqbhfeIyvXw2df+ZnZyuPmbu2RQ796c0bUX/pjSxjDrjvqqTEYo/O79TyksIpL/nmEQN4k80KaOSk39FXj6bJNpYNAGnadKdo0JJBu+YQpQZQeS5lidgIoUWy90RZrOACQOl1duZe+8P1lrJolCfzetVYGz8m4LLvJfZg7wxZk4fjevHoApcH1eSnnUunXXUs6YC6Sk6IfcSJRFkjqy/aIUg8gN9w6+nqI/o3gn/NCkyrXmJI3Ifhrrzzs8q5Cfh+SvB1x+6XUc6hUQbO0/NJBG9SBskdrH7ml1wioPe1DaGR8jKQ1qpxMHIpbsIhpT2VkWl6hpzW+JKzzVxDSCxoHi4GldJmD3obfr+A0xcJhoosvUyYCDL6lzTISiXR9CHRYoHc/wsTm1rBsS4wEOCQ0Wqf0O96g08ak7PmW5/LDRa+5qySivw+jfZn89BqE26SEyNTH2AVB4Aj67PCmRLZMepSq03wLFh/E=\",Value:\"ewogICJ0aW1lc3RhbXAiIDogMTc1Nzk1OTMzMDU5OCwKICAicHJvZmlsZUlkIiA6ICI3ZGEyYWIzYTkzY2E0OGVlODMwNDhhZmMzYjgwZTY4ZSIsCiAgInByb2ZpbGVOYW1lIiA6ICJHb2xkYXBmZWwiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjI1YmU4ZWZjYjFjNTAzODc5MTJhZTQ4ZTBiZGQwMGNjOWU3YzdjNWZkMjAwNzJkODI4ZTBlOTk5ZTQ4Zjg3ZSIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9CiAgfQp9\"}]},hypixelPopulated:1B},display:{Lore:[0:\"§8Requires level 0\",1:\"§8Chestplates\",2:\"\",3:\"§7Special look on Jerry's Workshop!\",4:\"§7Obtained from Fire Sales.\",5:\"\",6:\"§7Apply this rune to chestplates at the\",7:\"§7Runic Pedestal!\",8:\"\",9:\"§6§lLEGENDARY COSMETIC\"],Name:\"§c◆ Grand Freezing Rune III\"},ench:[]}",
+  "damage": 3,
+  "lore": [
+    "§8Requires level 0",
+    "§8Chestplates",
+    "",
+    "§7Special look on Jerry's Workshop!",
+    "§7Obtained from Fire Sales.",
+    "",
+    "§7Apply this rune to chestplates at the",
+    "§7Runic Pedestal!",
+    "",
+    "§6§lLEGENDARY COSMETIC"
+  ],
+  "internalname": "GRAND_FREEZING_RUNE;3",
+  "clickcommand": "",
+  "crafttext": "",
+  "modver": "Firmament 44.2.0-dev+mc26.2+gd594e7fb",
+  "infoType": "WIKI_URL",
+  "info": [
+    "https://hypixelskyblock.minecraft.wiki/w/Grand_Freezing_Rune"
+  ]
+}

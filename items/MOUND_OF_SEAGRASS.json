@@ -1,0 +1,31 @@
+{
+  "itemid": "minecraft:paper",
+  "displayname": "§5Mound of Seagrass",
+  "nbttag": "{ExtraAttributes:{id:\"MOUND_OF_SEAGRASS\"},HideFlags:254,ItemModel:\"minecraft:seagrass\",display:{Lore:[0:\"§8Consumable\",1:\"\",2:\"§7Consume this item to permanently\",3:\"§7gain §9+1 Pressure Resistance§7.\",4:\"\",5:\"§7You can only consume §a5 §7of these\",6:\"§7little guys before the guilt becomes\",7:\"§7too severe.\",8:\"\",9:\"§8§oNessie's favorite food. She has a lot\",10:\"§8§oof favorite foods.\",11:\"\",12:\"§eRight-click to consume!\",13:\"\",14:\"§5§lEPIC\"],Name:\"§5Mound of Seagrass\"}}",
+  "damage": 0,
+  "lore": [
+    "§8Consumable",
+    "",
+    "§7Consume this item to permanently",
+    "§7gain §9+1 Pressure Resistance§7.",
+    "",
+    "§7You can only consume §a5 §7of these",
+    "§7little guys before the guilt becomes",
+    "§7too severe.",
+    "",
+    "§8§oNessie's favorite food. She has a lot",
+    "§8§oof favorite foods.",
+    "",
+    "§eRight-click to consume!",
+    "",
+    "§5§lEPIC"
+  ],
+  "internalname": "MOUND_OF_SEAGRASS",
+  "clickcommand": "",
+  "crafttext": "",
+  "modver": "Firmament 44.3.0-dev+mc26.2+ga5fdc6d2",
+  "infoType": "WIKI_URL",
+  "info": [
+    "https://hypixelskyblock.minecraft.wiki/w/Mound_of_Seagrass"
+  ]
+}

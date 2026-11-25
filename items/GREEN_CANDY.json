@@ -1,0 +1,21 @@
+{
+  "itemid": "minecraft:paper",
+  "displayname": "§aGreen Candy",
+  "nbttag": "{ExtraAttributes:{id:\"GREEN_CANDY\"},HideFlags:254,ItemModel:\"hypixel_skyblock:item/great_spook/green_candy\",display:{Lore:[0:\"§7Candy can be used to trade with the\",1:\"§7Fear Mongerer during the §6Spooky\",2:\"§6Festival§7!\",3:\"\",4:\"§a§lUNCOMMON\"],Name:\"§aGreen Candy\"}}",
+  "damage": 0,
+  "lore": [
+    "§7Candy can be used to trade with the",
+    "§7Fear Mongerer during the §6Spooky",
+    "§6Festival§7!",
+    "",
+    "§a§lUNCOMMON"
+  ],
+  "internalname": "GREEN_CANDY",
+  "clickcommand": "",
+  "crafttext": "",
+  "modver": "Firmament 44.3.0-dev+mc26.2+ga5fdc6d2",
+  "infoType": "WIKI_URL",
+  "info": [
+    "https://hypixelskyblock.minecraft.wiki/w/Green_Candy"
+  ]
+}
