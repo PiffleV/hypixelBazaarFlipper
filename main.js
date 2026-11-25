@@ -17,7 +17,8 @@ async function getBazaar() {
     }
 }
 
-async function craftless(options) {
+
+async function craftless(options = craftlessOptions) {
     bz = await getBazaar();
     list = [];
     bzProd = bz["products"];
@@ -47,7 +48,7 @@ async function craftless(options) {
         sell = costToSell["pricePerUnit"]
         buy = costToBuy["pricePerUnit"]
         rawProfit = sell - buy;
-        percent = rawProfit/buy;
+        percent = (sell/buy)*100;
         list.push({item: element, buy: buy, sell: sell, raw: rawProfit, percent: percent});
     });
 
@@ -109,4 +110,4 @@ for (let i = 0; i < craftlessOptionsDiv.children.length; i++) {
 
 }
 
-craftless(craftlessOptions)
+craftless(craftlessOptions);
