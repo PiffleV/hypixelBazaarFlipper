@@ -176,7 +176,6 @@ async function crafting(options = craftingOptions) {
                     }
                     buy += (costToBuy["pricePerUnit"] + 0.1) * itemCount;
                     totalSellingWeek += bzProd[itemInRecipe]["quick_status"]["sellMovingWeek"]
-                    itemRecipeString += `${itemInRecipe}: ${itemCount}\n`;
                 });
             });
 
@@ -189,6 +188,9 @@ async function crafting(options = craftingOptions) {
                 return;
             }
 
+            Object.keys(newItemList).forEach(itemInRecipe => {
+                itemRecipeString += `${itemInRecipe}: ${newItemList[itemInRecipe]}\n`;
+            })
             itemList = newItemList;
 
             rawProfit = sell - buy;
