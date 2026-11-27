@@ -7,7 +7,7 @@ To update the crafting recipes:
 2. Download the items folder
 3. Place it into your folder, and name it "items"
 4. Go to the web console and type `loadItems()`. 
-5. Wait a bit, then copy the new Object and paste it into `crafting.json`.
+5. Wait a bit, then copy the new Object (`Copy Object`) and paste it into `crafting.json`.
 
 (This is slow because it has to go through every single file in the json)
 

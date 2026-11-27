@@ -129,46 +129,73 @@ async function crafting(options = craftingOptions) {
         if (itemRecipe == undefined) {
             return;
         }
+        
+        itemList = {}
+        itemList[element] = itemRecipe["count"]
 
-        itemRecipeString = "";
         allInBz = true;
-        buy = 0;
-        totalSellingWeek = 0;
-        Object.keys(itemRecipe).forEach(itemInRecipe => {
+        while (allInBz) {
+            itemRecipeString = "";
+            buy = 0;
+            totalSellingWeek = 0;
+            let newItemList = [];
+
+            Object.keys(itemList).forEach(item => {
+                itemRecipe = craftingRecipes[item];
+                if (itemRecipe == undefined) {
+                    allInBz = false;
+                }
+                if (!allInBz) {
+                    return;
+                }
+                Object.keys(itemRecipe).forEach(itemInRecipe => {
+
+                    if (!allInBz) {
+                        return;
+                    }
+
+                    if (itemInRecipe == "count") {
+                        return;
+                    }
+
+                    if (!Object.keys(bzProd).includes(itemInRecipe)) {
+                        allInBz = false;
+                        return;
+                    }
+
+                    costToBuy = bzProd[itemInRecipe]["sell_summary"][0]
+                    if (costToBuy == undefined) {
+                        allInBz = false;
+                        return;
+                    }
+                    itemCount = itemRecipe[itemInRecipe] * itemList[item];
+                    if (newItemList[itemInRecipe] == undefined) {
+                        newItemList[itemInRecipe] = itemCount;
+                    } else {
+                        newItemList[itemInRecipe] += itemCount;
+                    }
+                    buy += (costToBuy["pricePerUnit"] + 0.1) * itemCount;
+                    totalSellingWeek += bzProd[itemInRecipe]["quick_status"]["sellMovingWeek"]
+                    itemRecipeString += `${itemInRecipe}: ${itemCount}\n`;
+                });
+            });
+
             if (!allInBz) {
                 return;
             }
 
-            if (!Object.keys(bzProd).includes(itemInRecipe)) {
-                allInBz = false;
+            totalSellingWeek /= Object.keys(itemRecipe).length;
+            if (totalSellingWeek + bzInfo["quick_status"]["buyMovingWeek"] < options.minMoving) {
                 return;
             }
 
-            costToBuy = bzProd[itemInRecipe]["sell_summary"][0]
-            if (costToBuy == undefined) {
-                allInBz = false;
-                return;
-            }
+            itemList = newItemList;
 
-            itemCount = itemRecipe[itemInRecipe];
-            buy += (costToBuy["pricePerUnit"] + 0.1) * itemCount;
-            totalSellingWeek += bzProd[itemInRecipe]["quick_status"]["sellMovingWeek"]
-            itemRecipeString += `${itemInRecipe}: ${itemRecipe[itemInRecipe]}\n`;
-        })
-
-        if (!allInBz) {
-            return;
+            rawProfit = sell - buy;
+            percent = (sell/buy)*100; 
+            
+            list.push({item: element, purchaseList: itemRecipeString, buy: buy, sell: sell, raw: rawProfit, percent: percent});
         }
-
-        totalSellingWeek /= Object.keys(itemRecipe).length;
-        if (totalSellingWeek + bzInfo["quick_status"]["buyMovingWeek"] < options.minMoving) {
-            return;
-        }
-
-        rawProfit = sell - buy;
-        percent = (sell/buy)*100; 
-
-        list.push({item: element, purchaseList: itemRecipeString, buy: buy, sell: sell, raw: rawProfit, percent: percent});
     });
     const craftingDiv = document.getElementById("crafting");
     craftingDiv.innerHTML = "";

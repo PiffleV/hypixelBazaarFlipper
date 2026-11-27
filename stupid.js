@@ -32,14 +32,20 @@ async function loadItems() {
         Object.keys(recipes).forEach(element => {
 
             const itemInfo = recipes[element];
+            if (element == "count") {
+                itemRecipe["count"] = itemInfo;
+            }
             if (itemInfo == "" || !(["A1","A2","A3","B1","B2","B3","C1","C2","C3"].includes(element))) {
                 return;
             }
 
             [item, count] = itemInfo.split(":");
             count = parseInt(count);
+
+            item = item.replace("-",":")
+            item = item.replace("%3B","_")
+
             if (isNaN(count)) {
-                console.log(itemInfo);
                 count = 1;
             }
             if (itemRecipe[item] == undefined) {
@@ -48,10 +54,13 @@ async function loadItems() {
                 itemRecipe[item] += count;
             }
         });
+        if (itemRecipe["count"] == undefined) {
+            itemRecipe["count"] = 1;
+        }
         let itemName = items[itemCount].split(".")[0]
-        itemName.replace("-",":")
-        itemName.replace("%3B","_")
-        json[items[itemCount].split(".")[0]] = itemRecipe
+        itemName = itemName.replace("-",":")
+        itemName = itemName.replace("%3B","_")
+        json[itemName] = itemRecipe;
     }
     console.log(json);
 }
