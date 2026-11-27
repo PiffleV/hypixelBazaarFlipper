@@ -1,3 +1,3 @@
 Run `python3 -m http.server 8000`
-
+If you want to update the crafting json, go to https://github.com/NotEnoughUpdates/NotEnoughUpdates-REPO/tree/master/items, download the folder, place it into the directory named "items", then go to the console and type `loadItems()`. Wait a bit, then copy the new text and paste it into `crafting.json`.
 Credit to https://github.com/NotEnoughUpdates/NotEnoughUpdates-REPO/tree/master/items for providing the item information

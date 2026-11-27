@@ -70,12 +70,13 @@ async function craftless(options = craftlessOptions) {
             return;
         }
 
-        sell = costToSell["pricePerUnit"]
-        buy = costToBuy["pricePerUnit"]
+        origSell = (costToSell["pricePerUnit"] - 0.1)
+        sell = origSell * 0.9875
+        buy = costToBuy["pricePerUnit"] + 0.1
         rawProfit = sell - buy;
         percent = (sell/buy)*100;
 
-        list.push({item: element, buy: buy, sell: sell, raw: rawProfit, percent: percent});
+        list.push({item: element, buy: buy, instabuy: origSell, sell: sell, raw: rawProfit, percent: percent});
     });
 
     const craftlessDiv = document.getElementById("craftless");
@@ -84,7 +85,8 @@ async function craftless(options = craftlessOptions) {
     
     let info = [
         "Cost to Buy (Insta-sell cost): ${buy}",
-        "Cost to Sell (Insta-buy cost): ${sell}",
+        "No Tax Sell (Insta-buy Cost): ${instabuy}",
+        "Taxed Sell: ${sell}",
         "Raw profit: ${raw}",
         "Percent profit: ${percent}%"
     ];
@@ -121,8 +123,8 @@ async function crafting(options = craftingOptions) {
         if (costToSell == undefined || costToSell == 0) {
             return;
         }
-        sell = costToSell["pricePerUnit"]
-
+        sell = (costToSell["pricePerUnit"] - 0.1) * 0.9875;
+        
         itemRecipe = craftingRecipes[element];
         if (itemRecipe == undefined) {
             return;
@@ -149,7 +151,7 @@ async function crafting(options = craftingOptions) {
             }
 
             itemCount = itemRecipe[itemInRecipe];
-            buy += costToBuy["pricePerUnit"] * itemCount;
+            buy += (costToBuy["pricePerUnit"] + 0.1) * itemCount;
             totalSellingWeek += bzProd[itemInRecipe]["quick_status"]["sellMovingWeek"]
             itemRecipeString += `${itemInRecipe}: ${itemRecipe[itemInRecipe]}\n`;
         })
@@ -175,7 +177,7 @@ async function crafting(options = craftingOptions) {
     let info = [
         "List of items \n${purchaseList}",
         "Cost to Buy: ${buy}",
-        "Cost to Sell: ${sell}",
+        "Taxed Sell: ${sell}",
         "Raw profit: ${raw}",
         "Percent profit: ${percent}%"
     ];

@@ -13,7 +13,7 @@ html, body {
     justify-content: space-between;
     overflow: scroll;
     min-height: 0;
-    max-height: 100vh;
+    max-height: 80vh;
     margin-left: 1em;
     margin-right: 1em;
     border-radius: 1em;
