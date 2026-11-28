@@ -1,3 +1,4 @@
+import { renderItems, inputEditor } from "./cross.js";
 const craftlessOptionsDiv = document.getElementById("craftless-options");
 const craftlessOptions = {factions: false, enchants: false, sortMethod: "percent", minMoving: 0};
 
@@ -15,8 +16,6 @@ async function getRecipes() {
     craftingRecipes = await response.json();
 }
 
-getRecipes();
-
 async function getBazaar() {
     const bazaarURL = "https://api.hypixel.net/skyblock/bazaar";
     try {
@@ -33,21 +32,15 @@ async function getBazaar() {
     }
 }
 
-function format(template, variables) {
-    return template.replace(/\$\{(\w+)\}/g, (_, key) => {
-        return variables[key] ?? "";
-    });
-}
-
 async function craftless(options = craftlessOptions) {
-    bz = await getBazaar();
-    list = [];
-    bzProd = bz["products"];
+    let bz = await getBazaar();
+    let list = [];
+    let bzProd = bz["products"];
 
     let sortMethod = options.sortMethod;
 
     Object.keys(bzProd).forEach(element => {
-        bzInfo = bzProd[element];
+        let bzInfo = bzProd[element];
 
         if (!options.factions) {
             if (element.startsWith("FACTION")) {
@@ -63,18 +56,18 @@ async function craftless(options = craftlessOptions) {
             return;
         }
 
-        costToBuy = bzInfo["sell_summary"][0];
-        costToSell = bzInfo["buy_summary"][0];
+        let costToBuy = bzInfo["sell_summary"][0];
+        let costToSell = bzInfo["buy_summary"][0];
 
         if (costToBuy == undefined || costToSell == undefined || costToBuy == 0) {
             return;
         }
 
-        origSell = (costToSell["pricePerUnit"] - 0.1)
-        sell = origSell * 0.9875
-        buy = costToBuy["pricePerUnit"] + 0.1
-        rawProfit = sell - buy;
-        percent = (sell/buy)*100;
+        let origSell = (costToSell["pricePerUnit"] - 0.1)
+        let sell = origSell * 0.9875
+        let buy = costToBuy["pricePerUnit"] + 0.1
+        let rawProfit = sell - buy;
+        let percent = (sell/buy)*100;
 
         list.push({item: element, buy: buy, instabuy: origSell, sell: sell, raw: rawProfit, percent: percent});
     });
@@ -95,9 +88,9 @@ async function craftless(options = craftlessOptions) {
 }
 
 async function crafting(options = craftingOptions) {
-    bz = await getBazaar();
-    list = [];
-    bzProd = bz["products"];
+    let bz = await getBazaar();
+    let list = [];
+    let bzProd = bz["products"];
 
     let sortMethod = options.sortMethod;
 
@@ -106,7 +99,7 @@ async function crafting(options = craftingOptions) {
     }
 
     Object.keys(bzProd).forEach(element => {
-        bzInfo = bzProd[element];
+        let bzInfo = bzProd[element];
 
         if (!options.factions) {
             if (element.startsWith("FACTION")) {
@@ -119,29 +112,29 @@ async function crafting(options = craftingOptions) {
             }
         }
 
-        costToSell = bzInfo["buy_summary"][0];
+        let costToSell = bzInfo["buy_summary"][0];
         if (costToSell == undefined || costToSell == 0) {
             return;
         }
-        sell = (costToSell["pricePerUnit"] - 0.1) * 0.9875;
+        let sell = (costToSell["pricePerUnit"] - 0.1) * 0.9875;
         
-        itemRecipe = craftingRecipes[element];
+        let itemRecipe = craftingRecipes[element];
         if (itemRecipe == undefined) {
             return;
         }
         
-        itemList = {}
+        let itemList = {}
         itemList[element] = itemRecipe["count"]
 
-        allInBz = true;
-        while (allInBz) {
-            itemRecipeString = "";
-            buy = 0;
-            totalSellingWeek = 0;
+        let allInBz = true;
+        while (allInBz) { // Recursive check
+            let itemRecipeString = "";
+            let buy = 0;
+            let totalSellingWeek = 0;
             let newItemList = [];
 
             Object.keys(itemList).forEach(item => {
-                itemRecipe = craftingRecipes[item];
+                let itemRecipe = craftingRecipes[item];
                 if (itemRecipe == undefined) {
                     allInBz = false;
                 }
@@ -163,12 +156,13 @@ async function crafting(options = craftingOptions) {
                         return;
                     }
 
-                    costToBuy = bzProd[itemInRecipe]["sell_summary"][0]
+                    let costToBuy = bzProd[itemInRecipe]["sell_summary"][0]
                     if (costToBuy == undefined) {
                         allInBz = false;
                         return;
                     }
-                    itemCount = itemRecipe[itemInRecipe] * itemList[item];
+
+                    let itemCount = itemRecipe[itemInRecipe] * itemList[item];
                     if (newItemList[itemInRecipe] == undefined) {
                         newItemList[itemInRecipe] = itemCount;
                     } else {
@@ -191,10 +185,11 @@ async function crafting(options = craftingOptions) {
             Object.keys(newItemList).forEach(itemInRecipe => {
                 itemRecipeString += `${itemInRecipe}: ${newItemList[itemInRecipe]}\n`;
             })
+
             itemList = newItemList;
 
-            rawProfit = sell - buy;
-            percent = (sell/buy)*100; 
+            let rawProfit = sell - buy;
+            let percent = (sell/buy)*100; 
             
             list.push({item: element, purchaseList: itemRecipeString, buy: buy, sell: sell, raw: rawProfit, percent: percent});
         }
@@ -214,60 +209,7 @@ async function crafting(options = craftingOptions) {
     renderItems(list, craftingDiv, info);
 }
 
-function renderItems(list, div, info) {
-    list.forEach(element => {
-        const infoDiv = document.createElement("div");
-        infoDiv.className = "info-div";
-        div.appendChild(infoDiv);
-
-        const infoHeader = document.createElement("h2");
-        infoHeader.className = "info-header";
-        infoHeader.innerText = element.item;
-        infoDiv.append(infoHeader);
-
-        for (let i = 0; i < info.length; i++) {
-            const infoItem = document.createElement("p");
-            infoItem.className = "info";
-            infoDiv.append(infoItem);
-            infoItem.innerText = format(info[i], element);
-        }
-        
-    })
-}
-function inputEditor(div, options, refresh) {
-    for (let i = 0; i < div.children.length; i++) {
-        let child = div.children[i];
-        let input = child.children[1]
-        if (input.nodeName == "INPUT") {
-            if (input.type == "checkbox") {
-                input.addEventListener("input", element => {
-                    options[element.target.name] = element.target.checked;
-                    refresh();
-                })
-            } else if (input.type == "number") {
-                input.addEventListener("input", element => {
-                    let value = parseInt(element.target.value);
-                    if (!isNaN(value)) {
-                        options[element.target.name] = value;
-                    } else {
-                        options[element.target.name] = 0;
-                    }
-                    refresh();
-                })
-            }
-        } else if (input.nodeName == "SELECT") {
-            input.addEventListener("change", element => {
-                if (element.target.options[element.target.selectedIndex].value == "") {
-                    refresh();
-                    return;
-                }
-                options[element.target.name] = element.target.options[element.target.selectedIndex].value;
-                refresh();
-            })
-        }
-
-    }
-}
+getRecipes();
 
 inputEditor(craftlessOptionsDiv, craftlessOptions, craftless);
 inputEditor(craftingOptionsDiv, craftingOptions, crafting);
